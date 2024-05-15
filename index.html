@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crud System</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="container w-75 m-auto p-3 my-3 bg-secondary rounded">
+      <div class="form-inputs ">
+        <div class="form-group mb-3">
+          <label for="productName" class="mb-3 bg-success p-2 rounded">productName</label>
+          <input type="text" id="productName" class="form-control mb-2">
+          <div id="error" class="alert alert-danger d-none">Please Product Name Is Capital Frist Letter!</div>
+        </div>
+        <div class="form-group mb-3">
+          <label for="prouductPrice" class="mb-3 bg-warning p-2 rounded">productPrice</label>
+          <input type="text" id="productPrice" class="form-control">
+        </div>
+        <div class="form-group mb-3">
+          <label for="productCate" class="mb-3 btn-danger p-2 rounded">producCate</label>
+          <input type="text" id="productCate" class="form-control">
+        </div>
+        <div class="form-group mb-3">
+          <label for="productDesc" class="mb-3 btn-light text-info p-2 rounded ">producDesc</label>
+          <textarea id="productDesc" class="form-control"></textarea>
+        </div>
+        <div class="text-center">
+          <button disabled id="submitBtn" class="btn btn-outline-dark text-break">addProduct</button>
+        </div>
+      </div>
+    
+      <div class="data my-3">
+        <input id="search" type="search" id="search" class="form-control" placeholder="Search">
+        <table class="table text-dark">
+          <thead>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Cate</th>
+            <th>Desc</th>
+            <th>Delete</th>
+            <th>Update</th>
+          </thead>
+          <tbody id="my-table" class="text-dark">
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
